@@ -1,22 +1,21 @@
 
 
-export const LOGIN = "LOGIN";
 
-export const LOGOUT = "LOGOUT";
+export const LOGIN  = "LOGIN";
+export const LOGOUT = 'LOGUT';
 
-const login = (token) => {
 
+const login = (user) => {
     return {
-        type: LOGIN,
-        payload: token
+        type:LOGIN,
+        payload:user
     }
 }
 
 const logout = () => {
-    return{
-        type:LOGOUT,
-        payload:null
+    return {
+        type:LOGOUT
     }
 }
 
-export {login,logout} ;
+export {login,logout};
